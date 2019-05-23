@@ -1,0 +1,87 @@
+body {
+	overflow: hidden;
+	background: #e6e6e6;
+}
+
+/*
+Refers to the main Map display
+*/
+.map {
+	touch-action: none;
+	width: 100vw;
+	height: 100vh;
+}
+
+/*
+Refers to the data box in the top right
+*/
+#data-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: white;
+	width: 500px;
+	height: 150px;
+	box-shadow: 0 3px rgba(0,0,0,0.2);
+	transition: height 0.5s ease-out;
+}
+
+/*
+Refers to the year selection
+*/
+.years {
+	position: absolute;
+	right: 40px;
+	top: 5px;
+	width: 120px;
+}
+
+.sources {
+	z-index: 600;
+	color: darkgrey;
+	position: absolute;
+	bottom: -20px;
+}
+
+/*
+Refers to the contents of the data box, the constituency information and hex representation
+*/
+.bigger {
+	height: 400px !important;
+}
+
+#chart {
+	display: none;
+	height: 200px;
+	margin-top: 60px;
+}
+
+#constituency-info {
+	margin-top: -90px;
+	margin-left: 170px;
+}
+
+.hex {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.hex-a {
+	width: 0;
+	border-bottom: 30px solid lightgrey;
+	border-left: 52px solid transparent;
+	border-right: 52px solid transparent;
+}
+
+.hex-b {
+	width: 104px;
+	height: 60px;
+	background-color: lightgrey;
+}
+
+.hex-c {
+	width: 0;
+	border-top: 30px solid lightgrey;
+	border-left: 52px solid transparent;
+	border-right: 52px solid transparent;
+}
